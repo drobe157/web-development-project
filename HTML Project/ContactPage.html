@@ -18,11 +18,11 @@
     <main>
         <h1>Contact Us</h1>
         <p>Please reach out to us with your full name, and email address if you'd like to hear back!</p>
-        <form id="contactForm">
+        <form id="contactForm" action="/submit-form" method="post">
             <label for="name">Name:</label>
-            <input type="text" id="name" required>
+            <input type="text" id="name" name="name" required>
             <label for="email">Email:</label>
-            <input type="email" id="email" required>
+            <input type="email" id="email" name="email" required>
             <input type="submit" value="Submit">
         </form>
         <div id="formResponse" class="hidden"></div>

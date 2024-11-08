@@ -1,0 +1,84 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+/*Sets general font and color for webpage*/
+
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+/*Sets navigation ribbon at the top*/
+
+
+/*Navigation tool UI*/
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+/*Sets "Home, Aout, Contact" in a line*/
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+    /*Sets, and keeps navigation options white*/
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*Image grid container to cleanly display two images*/
+.image-container {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+}
+
+    .image-container img {
+        width: 100%; 
+        height: auto; 
+    }
+
+/*Section for email form/submission*/
+form {
+    margin-top: 20px;
+}
+
+    form label {
+        display: block;
+        margin-top: 10px;
+    }
+
+    form input[type="text"],
+    form input[type="email"] {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+    }
+
+    form input[type="submit"] {
+        background: #333;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+        form input[type="submit"]:hover {
+            background: #555;
+        }
